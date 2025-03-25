@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌟 ExpensoFlow Logo Animation */
+@keyframes glow {
+  0% { text-shadow: 0 0 10px rgba(255, 87, 34, 0.6); }
+  50% { text-shadow: 0 0 20px rgba(255, 87, 34, 0.9); }
+  100% { text-shadow: 0 0 10px rgba(255, 87, 34, 0.6); }
+}
+
+h1 {
+  animation: glow 2s infinite alternate;
+}
+
+/* 🌟 Stylish Navigation Buttons (Including Reset Button) */
+.nav-button {
+  background: linear-gradient(135deg, #ff9800, #ff5722);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4);
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-button:hover {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  transform: scale(1.08);
+  box-shadow: 0 6px 12px rgba(255, 87, 34, 0.5);
+}
+
+/* 🔥 Modern & Attractive Background */
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
